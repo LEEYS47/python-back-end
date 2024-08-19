@@ -28,5 +28,6 @@ from.import views
 
 urlpatterns = [
     path('',views.mainpage),
+    path('<int:content_id>/',views.detail,name='detail'),
     path('company/',views.company),
 ]
